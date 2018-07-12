@@ -5,11 +5,10 @@
  */
 
 $proper_name  = 'RSSFeeds';
-$version      = '0.3.6';
+$version      = '0.4.0';
 $import_sql   = TRUE;
 $register     = TRUE;
 $unregister   = FALSE;
-$version_http = 'http://phpwebsite.appstate.edu/downloads/modules/rss/check.xml';
 $about        = TRUE;
 $dependency   = true;
 

@@ -4,7 +4,7 @@
 <link>{HOME_ADDRESS}</link>
 <description>{CHANNEL_DESCRIPTION}</description> <language>{LANGUAGE}</language>
 <lastBuildDate>{LAST_BUILD_DATE}</lastBuildDate> <docs>{CHANNEL_ADDRESS}</docs>
-<generator>phpWebSite RSS module</generator> <managingEditor>{MANAGING_EDITOR}</managingEditor>
+<generator>Canopy RSS module</generator> <managingEditor>{MANAGING_EDITOR}</managingEditor>
 <webMaster>{WEBMASTER}</webMaster> <copyright>{COPYRIGHT}</copyright> <!-- BEGIN category --><category>{CATEGORY}</category><!-- END category -->
 <!-- BEGIN item-listing --> <item>
 <title>{ITEM_TITLE}</title>

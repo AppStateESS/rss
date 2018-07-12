@@ -158,6 +158,12 @@ function rss_update(&$content, $version)
 + Bootstrap icons and tables added.
 + Put correct rss.php directory in file check.
 </pre>';
+        case version_compare($version, '0.4.0', '<'):
+            $content[] = '<pre>
+0.4.0 changes
+--------------
++ Added feed view.
+</pre>';
     }
 
     return true;

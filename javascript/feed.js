@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(document).ready(function() {
     $('.edit-feed').click(function() {
         var id = $(this).data('id');
         $.getJSON('index.php', {
