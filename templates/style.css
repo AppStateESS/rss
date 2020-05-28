@@ -8,6 +8,7 @@
 #rss-feed.rss ul li {
     padding: 6px 8px;
     font-family : arial, helvetica;
+    line-height : 1.2em;
 }
 
 #rss-feed.rss .item-date {
@@ -15,8 +16,11 @@
 }
 
 #rss-feed.rss .item-title {
-    font-size : 0.9em;
 }
 
 #rss-feed.rss ul li:nth-child(odd) {
+}
+
+#rss-feed {
+    margin-bottom: 1.5em;
 }

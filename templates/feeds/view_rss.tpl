@@ -6,7 +6,8 @@
     <!-- BEGIN item_list -->
     <li>
       <span class="item-title"><a href="{LINK}">{TITLE}</span><br />
-      <span class="item-date">Posted: {PUBDATE_REFORMATED}</span></a>
+      <!-- BEGIN pubdate --><span class="item-date">Posted: {PUBDATE_REFORMATED}</span></a><!-- END pubdate -->
+      <!-- BEGIN eventdate --><span class="item-date">{EVENT_DATE}</span></a><!-- END eventdate -->
     </li>
     <!-- END item_list -->
   </ul>

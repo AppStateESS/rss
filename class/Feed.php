@@ -266,7 +266,11 @@ class RSS_Feed
                         $item_data['SHORT_DESCRIPTION'] = &$item_data['DESCRIPTION'];
                     }
 
-                    if (isset($item_data['PUBDATE'])) {
+                    if (isset($item_data['START'])) {
+                        $item_data['EVENT_DATE'] = strftime('%l:%M %p, %a, %b %e',
+                                strtotime($item_data['START']));
+                        $tpl['item_list'][] = $item_data;
+                    } elseif (isset($item_data['PUBDATE'])) {
                         $sortByDate = true;
                         $pubStamp = strtotime($item_data['PUBDATE']);
                         $xmlKey = $pubStamp;
@@ -324,7 +328,7 @@ class RSS_Feed
                     if ($version == '1.0') {
                         $items = &$child[0]['child'];
                         if (empty($items)) {
-                            continue;
+                            continue 2;
                         }
                         foreach ($items as $item) {
                             list(, $resource) = each($item['attributes']);

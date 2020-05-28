@@ -164,6 +164,12 @@ function rss_update(&$content, $version)
 --------------
 + Added feed view.
 </pre>';
+        case version_compare($version, '0.4.1', '<'):
+            $content[] = '<pre>
+0.4.1 changes
+--------------
++ Event labeling
+</pre>';
     }
 
     return true;
